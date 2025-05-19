@@ -18,14 +18,11 @@ public class UserService {
     @Autowired
     private UserRepo userRepo;
 
- 
- 
     public User saveUser(User user){
     return userRepo.save(user);
-  }
+    }
 
 
-   
 
     public List<User> getAllUsers(){
         return userRepo.findAll();
@@ -39,15 +36,6 @@ public class UserService {
         userRepo.deleteById(id);
     }
 
-    // public void updateUser(Long id,User user) {
-    //     if(userRepo.existsById(id)) {
-    //         user.setId(id);
-    //         userRepo.save(user);
-    //     }
-    // }
-
-
-
-    
+  
 
 }
