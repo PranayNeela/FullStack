@@ -1,6 +1,7 @@
 package com.example.springapp.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 
@@ -8,6 +9,7 @@ import jakarta.persistence.ManyToOne;
 public class Product {
 
     @Id
+    @GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
     private Long id;
     private String type;
     private String name;

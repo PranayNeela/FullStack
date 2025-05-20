@@ -9,9 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.springapp.repository.LoginRepo;
 
-// import com.example.UserCred.model.Loan;
-// import com.example.UserCred.model.Login;
-// import com.example.UserCred.repository.LoginRepository;
+
 
 
 @Service
